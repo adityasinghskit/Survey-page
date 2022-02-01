@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <div id="heading">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    </div>
+    <div id="form">
+    <form id="survey-form">
+      <div id=form-text>
+        <div id="form-entry">
+       <label id="name-label" for="name">Name</label><br>
+         <input class="form-entry-input" type="text" id="name" name="name" placeholder="  Enter your name" required>
+      </div>
+        <div id="form-entry">
+       <label id="email-label" for="email">Email</label><br>
+         <input class="form-entry-input" type="email" id="email" name="email" placeholder="  Enter your email" required>
+      </div>
+        <div id="form-entry">
+       <label id="number-label" for="number">Age (optional)</label><br>
+         <input class="form-entry-input" type="number" id="number" name="number" placeholder="  Age" min="10" max="99">
+      </div>
+         <div id="form-entry">
+       <label id="role-label" for="dropdown">Which option best describes your current role?</label><br>
+         <select class="form-entry-input" id="dropdown" name="dropdown">
+           <option value="">Select current role</option>
+           <option value="student">Student</option>
+           <option value="full time job">Full Time Job</option>
+           <option value="full time learner">Full Time Learner</option>
+           <option value="prefer not to say">Prefer not to say</option>
+           <option value="other">Other</option>
+         </select>
+      </div>
+        <div id="form-entry">
+       <label id="radio-label" for="radio">Would you recommend freeCodeCamp to a friend?</label><br>
+         <input class="form-entry-radio" type="radio" id="Definitely" name="radio" value="Definitely" checked><label id="radio-label" for="Definitely">  Definitely</label><br>
+          <input class="form-entry-radio" type="radio" id="Maybe" name="radio" value="Maybe"><label id="radio-label" for="Maybe">    Maybe</label><br>
+          <input class="form-entry-radio" type="radio" id="Not sure" name="radio" value="Not sure"><label id="radio-label" for="Not sure">    Not sure</label><br>
+      </div>
+        <div id="form-entry">
+       <label id="favourite-label" for="favourite">What is your favorite feature of freeCodeCamp?</label><br>
+         <select class="form-entry-input" id="favourite" name="favourite">
+           <option value="">Select an option</option>
+           <option value="challenges">Challenges</option>
+           <option value="projects">Projects</option>
+           <option value="community">Community</option>
+           <option value="open source">Open Source</option>
+         </select>
+      </div>
+        <div id="form-entry">
+       <label id="checkbox-label" for="check">What would you like to see improved? (Check all that apply)</label><br>
+         <input class="form-entry-radio" type="checkbox" id="FEP" name="check" value="FEP"><label id="checkbox-label" for="FEP">  Front-end Projects</label><br>
+         <input class="form-entry-radio" type="checkbox" id="BEP" name="check" value="BEP"><label id="checkbox-label" for="BEP">  Back-end Projects</label><br>
+           <input class="form-entry-radio" type="checkbox" id="DV" name="check" value="DV"><label id="checkbox-label" for="DV">  Data Visualization</label><br>
+          <input class="form-entry-radio" type="checkbox" id="Challenges" name="check" value="Challenges"><label id="checkbox-label" for="DV">  Challenges</label><br>
+      </div>
+        <div id="form-entry">
+       <label id="textarea-label" for="comments">Any comments or suggestions?</label><br>
+         <textarea class="form-entry-textarea" id="comments" name="comments" rows="8" placeholder=" Enter your comments here..."></textarea>
+      </div>
+        <button class="form-entry-button" id="submit">Submit</button>
+        
+      <div>
+    </form>
+      </div>
+      
+      
+  </body>
+</html>
